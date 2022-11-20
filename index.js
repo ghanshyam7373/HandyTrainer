@@ -1,6 +1,4 @@
-const initApp = () => {
-
-    const showBodymaps = () => {
+const showBodymaps = () => {
         let checkValue = document.querySelector('input[name="gender"]:checked')
         if (checkValue) {
             if (checkValue.value === 'male') {
@@ -75,7 +73,8 @@ const initApp = () => {
         document.querySelector('body').appendChild(videos(muscleFor, vidUrl1, vidUrl2));
     }
 
-
+    const initApp = () => {
+        
     // Female Videos
     document.getElementById('abdominalsf').addEventListener('click', () => {
         document.getElementById('MainPage').style.display = "none";
