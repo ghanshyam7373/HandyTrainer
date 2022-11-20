@@ -128,7 +128,7 @@ const getDietRecipe = (item1, item2) => {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '12fd4790e1mshdd9e9bed5f94427p130f9djsn259398c99e21',
+            'X-RapidAPI-Key': config.MY_API_TOKEN,
             'X-RapidAPI-Host': 'edamam-recipe-search.p.rapidapi.com'
         }
     };
@@ -141,7 +141,10 @@ const getDietRecipe = (item1, item2) => {
                     let hits = response.hits[i].recipe;
                     let ing = "";
                     for (let j = 0; j < hits.ingredientLines.length; j++) {
-                        ing = ing + ', ' + hits.ingredientLines[j];
+                        if(ing !== "")
+                            ing = ing + ', ' + hits.ingredientLines[j];
+                        else
+                            ing = hits.ingredientLines[j];
                     }
                     if (hits.dietLabels[0]) {
                         document.getElementById('recipeCards').appendChild(recipeCard(hits.image, hits.label, hits.dietLabels[0], ing, hits.calories.toFixed(2), hits.totalNutrients.ENERC_KCAL.quantity.toFixed(2), hits.totalNutrients.FAT.quantity.toFixed(2), hits.totalNutrients.CHOCDF.quantity.toFixed(2), hits.totalNutrients.FIBTG.quantity.toFixed(2), hits.totalNutrients.SUGAR.quantity.toFixed(2), hits.totalNutrients.PROCNT.quantity.toFixed(2)));
@@ -166,7 +169,10 @@ const getDietRecipe = (item1, item2) => {
                     let hits = response.hits[i].recipe;
                     let ing = "";
                     for (let j = 0; j < hits.ingredientLines.length; j++) {
-                        ing = ing + ', ' + hits.ingredientLines[j];
+                        if(ing !== "")
+                            ing = ing + ', ' + hits.ingredientLines[j];
+                        else
+                            ing = hits.ingredientLines[j];
                     }
                     if (hits.dietLabels[0]) {
                         document.getElementById('recipeCards').appendChild(recipeCard(hits.image, hits.label, hits.dietLabels[0], ing, hits.calories.toFixed(2), hits.totalNutrients.ENERC_KCAL.quantity.toFixed(2), hits.totalNutrients.FAT.quantity.toFixed(2), hits.totalNutrients.CHOCDF.quantity.toFixed(2), hits.totalNutrients.FIBTG.quantity.toFixed(2), hits.totalNutrients.SUGAR.quantity.toFixed(2), hits.totalNutrients.PROCNT.quantity.toFixed(2)));

@@ -109,7 +109,7 @@ a {
         margin-top: 10px;
     }
     .bgselect{
-        top: 32vh;
+        top: 30vh;
     }
     #selecth2, #selecth5{
         font-size: 20px;
@@ -147,7 +147,7 @@ a {
         margin-top: 10px;
     }
     .bgselect{
-        top: 28vh;
+        top: 24vh;
     }
     #selecth2, #selecth5{
         font-size: 16px;
@@ -189,7 +189,7 @@ a {
         margin-top: 10px;
     }
     .bgselect{
-        top: 25vh;
+        top: 20vh;
     }
     #selecth2, #selecth5{
         font-size: 16px;
@@ -231,7 +231,7 @@ a {
         margin-top: 10px;
     }
     .bgselect{
-        top: 20vh;
+        top: 15vh;
     }
     #selecth2, #selecth5{
         font-size: 15px;
@@ -273,7 +273,7 @@ a {
         margin-top: 10px;
     }
     .bgselect{
-        top: 20vh;
+        top: 15vh;
     }
     #selecth2, #selecth5{
         font-size: 15px;
@@ -392,6 +392,7 @@ a {
     width: 100%;
     margin: 15px;
     padding: 10px;
+    margin: auto;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -407,7 +408,7 @@ a {
 
 .Card-head {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
 }
 
@@ -457,7 +458,7 @@ a {
 }
 
 .Card-img-top {
-    width: 15%;
+    width: 15% !important;
     height: auto;
     margin: 10px;
     border-radius: 10px;
