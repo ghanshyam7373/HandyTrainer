@@ -1,35 +1,61 @@
-body{
-    padding:0;
-    margin:0;
+body {
+    padding: 0;
+    margin: 0;
     background-color: black;
 }
-h1{
-    color:#0B9ED0 ;
+
+h1 {
+    color: #0B9ED0;
     text-align: center;
 }
-#navlogo{
+
+#navlogo {
     width: 10vw;
-    height:auto;
+    height: auto;
 }
-nav{
-font-family: 'Roboto Slab', serif;
+
+nav {
+    font-family: 'Roboto Slab', serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    z-index: 1;
 }
-.bgselect{
+.navbar-toggler-icon{
+    filter: brightness(0) invert(1);
+}
+.recipeInputField{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.RecipeInput, #RecipeGen{
+    padding: 8px;
+    margin: 10px;
+    border: none;
+    border-radius:5px;
+}
+.bgselect {
     position: absolute;
-    top:50vh;
-    left:8vw;
+    top: 50vh;
+    left: 8vw;
     color: #0B9ED0;
     font-family: 'Kanit', sans-serif;
 }
-.bgselect p{
+
+.bgselect p {
     color: white;
 }
-#Headinggender{
+
+.GenderHead {
     color: white;
     font-size: 30px;
-    text-align:center;
+    text-align: center !important;
 }
-a{
+
+a {
     text-decoration: none;
     color: #0B9ED0;
 }
@@ -65,13 +91,83 @@ a{
     color: #0B9ED0;
     cursor: pointer
 }
-#female-body-maps{
+
+#female-body-maps {
     display: none;
 }
 
+@media screen and (max-width:1199px){
+    .BMICatText{
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:950px){
+    #navlogo {
+        width: 15vw;
+    }
+    .BMICatText{
+        margin-top: 10px;
+    }
+    .bgselect{
+        top: 32vh;
+    }
+    #selecth2, #selecth5{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    #selectp{
+        font-size: 15px;
+        margin-bottom: 5px;
+        width: 60%;
+    }
+    #selectbutton{
+        width: 40%;
+        font-size: 15px;
+    }
+    nav{
+        font-size: 12px;
+        background-color: black;
+    }
+}
 @media screen and (max-width:600px) {
     .body-map__body {
         height: 650px
+    }
+    .RecipeInput,#RecipeGen{
+        width: 100%;
+        font-size: 13px;
+    }
+    #navlogo {
+        width: 20vw;
+    }
+    .glassbmi{
+        width: 100% !important;
+    }
+    .BMICatText{
+        margin-top: 10px;
+    }
+    .bgselect{
+        top: 28vh;
+    }
+    #selecth2, #selecth5{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    #selectp{
+        font-size: 13px;
+        width: 80%;
+        margin-bottom: 5px;
+    }
+    #selectbutton{
+        width: 40%;
+        font-size: 12px;
+    }
+    .GenderHead{
+        font-size: 25px;
+    }
+    nav{
+        font-size: 12px;
+        background-color: black;
     }
 }
 
@@ -79,11 +175,83 @@ a{
     .body-map__body {
         height: 650px
     }
+    .RecipeInput,#RecipeGen{
+        width: 100%;
+        font-size: 13px;
+    }
+    #navlogo {
+        width: 25vw;
+    }
+    .glassbmi{
+        width: 100% !important;
+    }
+    .BMICatText{
+        margin-top: 10px;
+    }
+    .bgselect{
+        top: 25vh;
+    }
+    #selecth2, #selecth5{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    #selectp{
+        font-size: 10px;
+        width: 60%;
+        margin-bottom: 5px;
+    }
+    #selectbutton{
+        width: 40%;
+        font-size: 10px;
+    }
+    .GenderHead{
+        font-size: 22px;
+    }
+    nav{
+        font-size: 12px;
+        background-color: black;
+    }
 }
 
 @media screen and (max-width:360px) {
     .body-map__body {
         height: 600px
+    }
+    .RecipeInput,#RecipeGen{
+        width: 100%;
+        font-size: 12px;
+    }
+    #navlogo {
+        width: 25vw;
+    }
+    .glassbmi{
+        width: 100% !important;
+    }
+    .BMICatText{
+        margin-top: 10px;
+    }
+    .bgselect{
+        top: 20vh;
+    }
+    #selecth2, #selecth5{
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    #selectp{
+        font-size: 10px;
+        width: 55%;
+        margin-bottom: 5px;
+    }
+    #selectbutton{
+        width: 40%;
+        font-size: 10px;
+    }
+    .GenderHead{
+        font-size: 22px;
+    }
+    nav{
+        font-size: 10px;
+        background-color: black;
     }
 }
 
@@ -91,18 +259,229 @@ a{
     .body-map__body {
         height: 500px
     }
+    .RecipeInput,#RecipeGen{
+        width: 100%;
+        font-size: 12px;
+    }
+    #navlogo {
+        width: 25vw;
+    }
+    .glassbmi{
+        width: 100% !important;
+    }
+    .BMICatText{
+        margin-top: 10px;
+    }
+    .bgselect{
+        top: 20vh;
+    }
+    #selecth2, #selecth5{
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    #selectp{
+        font-size: 10px;
+        width: 55%;
+        margin-bottom: 5px;
+    }
+    #selectbutton{
+        width: 40%;
+        font-size: 10px;
+    }
+    .GenderHead{
+        font-size: 20px;
+    }
+    nav{
+        font-size: 10px;
+        background-color: black;
+    }
 }
 
 /* tools css */
-.cardTool{
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    background-color: rgba(255, 255, 255, 0.301);
-    color:white;
+.cardTool {
+    color: white;
+    background: rgba(183, 183, 183, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.exerciseDiff{
+
+.toolstext {
+    text-shadow: #22222273 2px 2px;
+}
+
+.toolsbg {
+    background-image: url('https://res.cloudinary.com/duoe2yt88/image/upload/v1668971314/Images/toolsbg_re4kvy.png');
+    background-size: cover;
+}
+
+.bmibg {
+    background-image: url('https://res.cloudinary.com/duoe2yt88/image/upload/v1668971313/Images/bmibg_dunzgh.png');
+    background-size: cover;
+}
+.Recipebg{
+    background-image: url('https://res.cloudinary.com/duoe2yt88/image/upload/v1668971312/Images/recipebg_iqqcop.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+.exerciseDiff {
     color: white;
     font-size: 25px;
 }
-#exercisePageDiv{
+
+#exercisePageDiv {
     display: none;
+}
+
+.btnBMI {
+    width: 100%;
+}
+
+.BMIinput {
+    background-color: rgba(255, 255, 255, 0.836);
+    margin: 10px 0px 20px 0px;
+    font-size: 18px;
+}
+
+.catPara,
+#BMICat {
+    color: white;
+    margin: 5px;
+}
+
+.BMICatText {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    border: #0B9ED0 solid 3px;
+    border-radius: 10px;
+}
+.BMIContent{
+    display: flex;
+    justify-content:space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.glassbmi {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 50px;
+    text-shadow: #22222273 2px 2px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+}
+
+#BMIResult {
+    text-align: center;
+    color: white;
+}
+
+.Card {
+    width: 100%;
+    margin: 15px;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.Card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.Card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Card-body p {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.Recipehead {
+    width: 100%;
+    padding: 10px;
+}
+
+.card-text {
+    color: #5dd6ff;
+    font-weight: 600;
+    padding: 2px;
+}
+
+.DataSpan {
+    color: white;
+}
+
+.recipe-image {
+    padding: 0;
+}
+
+.RecipeHeader {
+    color: white;
+}
+
+#RecipeLabel {
+    margin: 0;
+}
+
+.ingredientsSpan {
+    color: #0B9ED0;
+    font-weight: 600;
+}
+
+.Card-img-top {
+    width: 15%;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#recipeCards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+#LoadMore{
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+#DataNot{
+    color: red;
+    text-shadow: rgb(0, 0, 0) 2px 2px;
+}
+.Title{
+    text-align: center;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    margin: 10px;
 }
