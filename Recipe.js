@@ -128,7 +128,7 @@ const getDietRecipe = (item1, item2) => {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': config.MY_API_TOKEN,
+            'X-RapidAPI-Key': '12fd4790e1mshdd9e9bed5f94427p130f9djsn259398c99e21',
             'X-RapidAPI-Host': 'edamam-recipe-search.p.rapidapi.com'
         }
     };

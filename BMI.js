@@ -3,7 +3,7 @@ const calculateBMI = (weight, height) => {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': config.MY_API_TOKEN,
+            'X-RapidAPI-Key': '12fd4790e1mshdd9e9bed5f94427p130f9djsn259398c99e21',
             'X-RapidAPI-Host': 'body-mass-index-bmi-calculator.p.rapidapi.com'
         }
     };
