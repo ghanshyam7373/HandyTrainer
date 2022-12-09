@@ -33,9 +33,7 @@ const showBodymaps = () => {
         let exerciseVid1 = document.createElement('div');
         exerciseVid1.classList.add('exerciseVid');
         let iframe1 = document.createElement('iframe');
-        iframe1.setAttribute('width', 760);
-        iframe1.setAttribute('height', 415);
-        iframe1.setAttribute('src', vidUrl1 + "?controls=0");
+        iframe1.setAttribute('src', vidUrl1);
         iframe1.setAttribute('title', "YouTube video player");
         iframe1.setAttribute('frameborder', "0");
         iframe1.setAttribute('allow', "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
@@ -47,9 +45,7 @@ const showBodymaps = () => {
         let exerciseVid2 = document.createElement('div');
         exerciseVid2.classList.add('exerciseVid');
         let iframe2 = document.createElement('iframe');
-        iframe2.setAttribute('width', 760);
-        iframe2.setAttribute('height', 415);
-        iframe2.setAttribute('src', vidUrl2 + "?controls=0");
+        iframe2.setAttribute('src', vidUrl2);
 
         // adding elements
         exerciseVid1.appendChild(iframe1);

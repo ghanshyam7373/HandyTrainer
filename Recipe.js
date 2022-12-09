@@ -109,6 +109,7 @@ const recipeCard = (imgUrl, RecipeLabel, dietLabel, Ingredients, Calories, Energ
     divCardBody.appendChild(p8);
     divCard.appendChild(divCardHead);
     divCard.appendChild(divCardBody);
+    divCard.setAttribute('data-aos','zoom-in')
 
     return divCard;
 }
@@ -148,6 +149,8 @@ const getDietRecipe = (item1, item2) => {
                     }
                     if (hits.dietLabels[0]) {
                         document.getElementById('recipeCards').appendChild(recipeCard(hits.image, hits.label, hits.dietLabels[0], ing, hits.calories.toFixed(2), hits.totalNutrients.ENERC_KCAL.quantity.toFixed(2), hits.totalNutrients.FAT.quantity.toFixed(2), hits.totalNutrients.CHOCDF.quantity.toFixed(2), hits.totalNutrients.FIBTG.quantity.toFixed(2), hits.totalNutrients.SUGAR.quantity.toFixed(2), hits.totalNutrients.PROCNT.quantity.toFixed(2)));
+
+                        
                         document.getElementById('recipeCards').appendChild(document.createElement('hr'));
                     }
                     else {

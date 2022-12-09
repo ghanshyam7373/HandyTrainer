@@ -95,10 +95,41 @@ a {
 #female-body-maps {
     display: none;
 }
+.exerciseVid, .exerciseDiff{
+    text-align: center;
+}
+.exerciseVid{
+    margin-bottom: 5vh;
+}
+iframe{
+    width: 854px;
+    height: 480px;
+}
+.Card-head  img{
+    width: 164px !important;
+    height: auto;
+}
+.titledata{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
 
 @media screen and (max-width:1199px){
     .BMICatText{
         margin-top: 10px;
+    }
+    iframe{
+        width: 754px;
+        height: 440px;
+    }
+    .Card-head  img{
+        width: 120px !important;
+        height: auto;
+    }
+    .RecipeHeader{
+        font-size: 25px;
     }
 }
 @media screen and (max-width:950px){
@@ -127,6 +158,26 @@ a {
     nav{
         font-size: 12px;
         background-color: black;
+    }
+    iframe{
+        width: 540px;
+        height: 320px;
+    }
+    .exerciseDiff{
+        font-size: 20px !important;
+    }
+    .Card-head  img{
+        width: 100px !important;
+        height: auto;
+    }
+    #RecipeLabel{
+        font-size: 19px;
+    }
+    .card-text{
+        font-size: 14px;
+    }
+    .RecipeHeader{
+        font-size: 22px;
     }
 }
 @media screen and (max-width:600px) {
@@ -168,6 +219,26 @@ a {
     nav{
         font-size: 12px;
         background-color: black;
+    }
+    iframe{
+        width: 426px;
+        height: 240px;
+    }
+    .exerciseDiff{
+        font-size: 19px !important;
+    }
+    .Card-head  img{
+        width: 90px !important;
+        height: auto;
+    }
+    #RecipeLabel{
+        font-size: 18px;
+    }
+    .card-text{
+        font-size: 14px;
+    }
+    .RecipeHeader{
+        font-size: 23px;
     }
 }
 
@@ -211,6 +282,26 @@ a {
         font-size: 12px;
         background-color: black;
     }
+    iframe{
+        width: 350px;
+        height: 220px;
+    }
+    .exerciseDiff{
+        font-size: 17px !important;
+    }
+    .Card-head  img{
+        width: 80px !important;
+        height: auto;
+    }
+    #RecipeLabel{
+        font-size: 17px;
+    }
+    .card-text{
+        font-size: 13px;
+    }
+    .RecipeHeader{
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width:360px) {
@@ -253,6 +344,26 @@ a {
         font-size: 10px;
         background-color: black;
     }
+    iframe{
+        width: 256px;
+        height: 144px;
+    }
+    .exerciseDiff{
+        font-size: 15px !important;
+    }
+    .Card-head  img{
+        width: 60px !important;
+        height: auto;
+    }
+    #RecipeLabel{
+        font-size: 17px;
+    }
+    .card-text{
+        font-size: 13px;
+    }
+    .RecipeHeader{
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width:320px) {
@@ -294,6 +405,29 @@ a {
     nav{
         font-size: 10px;
         background-color: black;
+    }
+    iframe{
+        width: 256px;
+        height: 144px;
+    }
+    .exerciseDiff{
+        font-size: 12px !important;
+    }
+    .Card-head  img{
+        width: 60px !important;
+        height: auto;
+    }
+    #RecipeLabel{
+        font-size: 17px;
+    }
+    .card-text{
+        font-size: 13px;
+    }
+    .RecipeHeader{
+        font-size: 18px;
+    }
+    .titledata{
+        font-size: 12px;
     }
 }
 
@@ -396,7 +530,7 @@ a {
     color: white;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -486,3 +620,107 @@ a {
     padding: 10px;
     margin: 10px;
 }
+.tracking-in-expand-fwd-bottom {
+	-webkit-animation: tracking-in-expand-fwd-bottom 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand-fwd-bottom 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+ @-webkit-keyframes tracking-in-expand-fwd-bottom {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px) translateY(500px);
+              transform: translateZ(-700px) translateY(500px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand-fwd-bottom {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px) translateY(500px);
+              transform: translateZ(-700px) translateY(500px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
+
+.tracking-in-contract {
+	-webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+ @-webkit-keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+
+.tracking-in-expand-fwd {
+	-webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+ @-webkit-keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+              transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+              transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
