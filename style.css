@@ -457,7 +457,7 @@ iframe{
 }
 .Recipebg{
     background-image: url('https://res.cloudinary.com/duoe2yt88/image/upload/v1668971312/Images/recipebg_iqqcop.jpg');
-    background-size: cover;
+    background-size: cover !important;
     background-attachment: fixed;
     width: 100%;
 }
